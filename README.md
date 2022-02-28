@@ -1,2 +1,2 @@
 # DX11Starter
-Starter code for a DX11 project
+This was built with starter code for a DX11 project made by Chris Cascioli.
