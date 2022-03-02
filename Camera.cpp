@@ -39,7 +39,7 @@ void Camera::Update(float dt)
 void Camera::UpdateViewMatrix()
 {
     DirectX::XMFLOAT3 pos = transform.GetPosition();
-    DirectX::XMVECTOR forward = DirectX::XMLoadFloat3(&transform.GetForward());
+    DirectX::XMVECTOR forward = DirectX::XMLoadFloat3(&transform.forward);
 
     DirectX::XMMATRIX view = DirectX::XMMatrixLookToLH(DirectX::XMLoadFloat3(&pos),forward, DirectX::XMLoadFloat3(&transform.up));
     DirectX::XMStoreFloat4x4(&viewMatrix, view);
